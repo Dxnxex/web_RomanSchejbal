@@ -1,0 +1,23 @@
+.backgroundFooter{
+
+    padding: 10px 0;
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+.styleFooter{
+
+    font-family: var(--fontNormal);
+    font-size: clamp(0.9rem, 1vw, 3vw);
+
+    color: var(--textColorBlack);
+    text-decoration: none;
+
+}
+
+
+.styleFooterLogo {
+    height: 40px;
+    width: 100%;
+}

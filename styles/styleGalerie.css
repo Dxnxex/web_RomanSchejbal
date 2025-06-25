@@ -1,0 +1,50 @@
+.galeryIndex{
+
+    padding-top:25px;
+    background-color: var(--colorBackgroundDark);
+    margin-bottom: 0;
+
+}
+
+.galeryIndex strong{
+
+    color: var(--textColorWhite);
+
+}
+
+
+.carousel img {
+    padding: 25px;
+
+    width:auto;
+    max-width: 80vw;
+
+    height: auto;
+    max-height: 80vh;
+
+    margin-bottom: 20px;
+
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 30%;
+    width: 110px;
+    height: 110px;
+    opacity: 1;
+}
+
+.galeryBackground{
+
+    position: absolute;
+
+    filter: blur(30px) grayscale(80%) brightness(100%) ;
+    margin: 0;
+    padding: 0;
+
+    min-width: 100%;
+    min-height: 100%;
+
+}

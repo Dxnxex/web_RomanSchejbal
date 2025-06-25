@@ -1,0 +1,12 @@
+# Ignoruj obrázky
+images/
+
+# Ignoruj soubory Composeru
+composer.json
+composer.lock
+
+# Ignoruj skript pro odesílání e-mailu
+send_mail.php
+
+# Ignoruj environment soubor
+.env

@@ -1,0 +1,124 @@
+
+
+
+/* NAVIGACE */
+.navigace {
+
+    justify-content: center;
+    align-items: center;
+
+    height: auto;
+    padding: 1px;
+
+    background-color: var(--colorBackgroundWhite);
+
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 1000;
+
+}
+
+.navigace.hide {
+    top: -100px;
+}
+
+.navigace ul {
+
+    font-size: clamp(0.9rem, 1vw, 3vw);
+    font-family: Arial, serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
+    list-style: none;
+    align-items: center;
+
+    width: auto;
+    margin: 0;
+    padding: 0;
+
+
+
+
+}
+
+.navigace li {
+
+    text-align: center;
+    text-wrap: nowrap;
+
+    padding: 0;
+    margin: auto;
+
+
+}
+
+.navigace a {
+
+    text-decoration: none;
+    color: var(--textColorDark);
+
+    padding: 5px;
+    position: relative;
+
+    border-bottom: var(--textColorWhite) 2px solid;
+}
+
+.navigace a:hover  {
+    color: var(--textColorLight);
+}
+
+
+
+.navigace a::after a:not(.tel){
+
+    text-decoration: none;
+    content: "";
+    position: absolute;
+
+    left: 0;
+    bottom: -2px;
+
+    width: 100%;
+    height: 3px;
+
+
+    background-color: var(--textColorLight);
+
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+
+
+}
+
+.navigace a:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+.navbar-toggler {
+    margin-left: 10px;
+    padding: 5px 20px;
+
+    background-color: #4b4b4b;
+    border: 2px solid white;
+}
+
+
+/*Ikona adresy a telefonu*/
+.imageNavigation {
+    width: 35px;
+    height: auto;
+    position: relative;;
+}
+
+/*Logo firmy*/
+.imageLogo {
+    width: 60px;
+}
+

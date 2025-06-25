@@ -1,0 +1,46 @@
+
+.styleMap {
+
+    padding: 10px 0;
+    background: var(--colorBackgroundLight);
+
+}
+
+.styleMap strong{
+
+    font-family: Bahnschrift, serif;
+    color: var(--textColorDark);
+}
+
+
+
+.styleMap span{
+
+    font-family: Bahnschrift, serif;
+    color: var(--textColorDark);
+
+}
+
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 16.25%;
+    position: relative;
+    height: 30vh;
+}
+
+.map-responsive iframe {
+    padding-top: 20px;
+    left: 0;
+    top: 0;
+    height: 80%;
+    width: 80%;
+    position: absolute;
+
+    transform: translateX(10%);
+}
+
+
+.hidden {
+    display: none;
+}

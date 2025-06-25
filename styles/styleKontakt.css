@@ -1,0 +1,68 @@
+/*MAIN*/
+div.styleContact {
+    background-color: var(--colorBackgroundDark);
+
+    padding: 90px 20px 20px;
+    margin: auto;
+    color: var(--textColorWhite);
+
+}
+
+
+/*STRONG*/
+.styleContact strong{
+    color: var(--textColorWhite);
+}
+
+/*SPAN*/
+.styleContact span{
+    color: var(--textColorWhite);
+}
+
+/*IMG*/
+.styleContact img{
+    width: 30vh;
+}
+
+
+
+#contactButton {
+
+    padding: 5px;
+
+    border: white 2px solid;
+    filter: brightness(100%);
+
+
+    color: var(--textColorLight);
+    background: var(--colorBackgroundWhite);
+
+
+    width: 90%;
+    height: auto;
+
+}
+
+#contactButton:hover {
+    filter: brightness(90%);
+}
+
+.contactImage img{
+
+    width: 4%;
+    height: auto;
+
+}
+
+.tel,
+.tel span {
+    text-decoration: none;
+    color: var(--textColorWhite);
+}
+
+.tel,
+.tel span:hover {
+    color: var(--textColorLight);
+}
+
+
