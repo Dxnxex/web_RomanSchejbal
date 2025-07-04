@@ -12,7 +12,6 @@
 
     background-color: var(--colorBackgroundWhite);
 
-
     position: fixed;
     top: 0;
     left: 0;
@@ -26,9 +25,11 @@
     top: -100px;
 }
 
-.navigace ul {
 
-    font-size: clamp(0.9rem, 1vw, 3vw);
+
+.navigaceText {
+
+    font-size: clamp(0.8rem, 1svw, 3vw);
     font-family: Arial, serif;
     font-optical-sizing: auto;
     font-weight: 800;
@@ -40,10 +41,6 @@
     width: auto;
     margin: 0;
     padding: 0;
-
-
-
-
 }
 
 .navigace li {
