@@ -11,7 +11,7 @@
     <meta name="description" content="Autoservis - Poctivost a spolehlivost" />
     <meta name="keywords" content="Autoservis - Poctivost a spolehlivost" />
     <link rel="icon" href="./images/icons/lgo.png" type="image/x-icon">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/style.css?v=100010" rel="stylesheet" type="text/css">
 </head>
 
 
@@ -27,8 +27,19 @@
 
 <acticle>
 
-    <div class="backgroundIndex borders">
-        <video id="responsiveVideo" autoplay muted loop playsinline></video>
+
+    <div class="video-background">
+        <!-- Landscape video -->
+        <video class="bg-video bg-video-landscape" autoplay muted loop playsinline poster="images/gallery/web_landscape.jpg">
+            <source src="images/gallery/RS_Landscape.mp4" type="video/mp4">
+            Váš prohlížeč nepodporuje video.
+        </video>
+
+        <!-- Portrait video -->
+        <video class="bg-video bg-video-portrait" autoplay muted loop playsinline poster="images/gallery/web_portrait.jpg">
+            <source src="images/gallery/RS_Portrait.mp4" type="video/mp4">
+            Váš prohlížeč nepodporuje video.
+        </video>
     </div>
 
 
@@ -57,7 +68,7 @@
 <script src="js/fragments.js"></script>
 <script src="js/gallery.js"></script>
 <script src="js/navigationHide.js"></script>
-<script src="js/introVideo.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 

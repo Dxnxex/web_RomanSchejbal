@@ -20,4 +20,7 @@
 .styleFooterLogo {
     height: 40px;
     width: 100%;
+
+    min-height: 40px;
+    min-width: 40px;
 }

@@ -4,9 +4,9 @@
 
     const source = document.createElement("source");
     source.src = isPortrait
-    ? "https://autoservis-ps.cz/images/gallery/RS_Portrait.mp4"
-    : "https://autoservis-ps.cz/images/gallery/RS_Landscape.mp4";
-    source.type = "video/mp4";
+    ? "/images/gallery/RS_Portrait.webm"
+    : "/images/gallery/RS_Landscape.webm";
+    source.type = "video/webm";
 
     video.appendChild(source);
     video.load();
@@ -15,3 +15,5 @@
     window.addEventListener("orientationchange", () => {
         location.reload();
     });
+
+    

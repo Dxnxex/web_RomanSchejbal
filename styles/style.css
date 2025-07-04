@@ -67,31 +67,59 @@ img {
 
 
 .backgroundIndex {
+
     position: absolute;
-    top: 0;
-    left: 0;
-
     width: 100%;
-    height: 100vh;
-
-    z-index: -1;
-    overflow: hidden;
-
+    height: 100%;
+    z-index: -2
 
 }
 
 .backgroundIndex video {
+
+    height: 100%;
+    object-fit: cover;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    opacity: 1;
+
+
+}
+
+
+.video-background {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0; /* stejný jako backgroundIndex, nižší než ostatní obsah */
+    overflow: hidden;
+}
 
-    width: 100%;
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
     height: 100%;
-
     object-fit: cover;
-    object-position: center;
+    opacity: 1;
+    pointer-events: none;
+    display: none;
+}
 
-    display: block;
+/* Landscape režim */
+@media (orientation: landscape) {
+    .bg-video-landscape {
+        display: block;
+    }
+}
 
-
+/* Portrait režim */
+@media (orientation: portrait) {
+    .bg-video-portrait {
+        display: block;
+    }
 }
