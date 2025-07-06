@@ -1,6 +1,7 @@
 # Ignoruj obrázky
 images/
 _resources/
+_sources/
 
 # Ignoruj soubory Composeru
 composer.json
