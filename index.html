@@ -56,6 +56,7 @@
         </script>
 
 
+
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6SJHH3N7Z"></script>
         <script>
@@ -63,8 +64,22 @@
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
+            gtag('consent', 'default', {
+                'ad_storage': 'denied',
+                'analytics_storage': 'denied',
+                'ad_user_data': 'denied',
+                'ad_personalization': 'denied',
+                'wait_for_update': 500
+            });
+
+
             gtag('config', 'G-G6SJHH3N7Z');
         </script>
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+
 
     </head>
 
@@ -442,17 +457,38 @@
 
 </article>
 
-
-</body>
-
-
+<!-- Cookie lišta -->
 <div id="cookie-banner" class="cookie-banner">
     <img src="images/icons/Cookies.png">
     <div>
         <p>Tato webová stránka používá soubory cookies k zajištění správného fungování, personalizaci obsahu, analýze návštěvnosti a případně k marketingovým účelům. Kliknutím na „Přijímám“ souhlasíte s jejich použitím.</p>
-        <button id="accept-cookies">Přijímám</button>
+        <button onclick="acceptCookies()" id="accept-cookies">Přijímám</button>
     </div>
 </div>
+
+
+
+<script>
+    function hideCookieBanner() {
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    function acceptCookies() {
+        gtag('consent', 'update', {
+            'ad_storage': 'granted',
+            'analytics_storage': 'granted',
+            'ad_user_data': 'granted',
+            'ad_personalization': 'granted'
+        });
+        hideCookieBanner();
+    }
+</script>
+
+
+</body>
+
+
+
 
 
 <div id="footer"></div>
@@ -461,8 +497,6 @@
 <script src="js/fragments.js"></script>
 <script src="js/gallery.js"></script>
 <script src="js/navigationHide.js"></script>
-<script src="js/cookies.js"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
